@@ -26,6 +26,8 @@ public class ListWidget extends AppCompatActivity {
      * adapter的几种简单写法
      */
     private void adapter(){
+
+        //item只有一个文本框是动态的. 数据源非String类型
         ArrayAdapter adapter1 = new ArrayAdapter(this,
                 android.R.layout.simple_list_item_1,
                 android.R.id.text1, bleList){
