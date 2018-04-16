@@ -39,7 +39,6 @@ public class ListWidget extends AppCompatActivity {
             }
         } ;
 
-
         ArrayAdapter adapter2 = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1,
                 new String[]{"F1","F2","F3","F4","F5","F6","F7","F8",});
