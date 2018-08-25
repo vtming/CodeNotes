@@ -144,31 +144,31 @@ public class AvatarActivity extends AppCompatActivity implements View.OnClickLis
             return;
         }
 
-        switch (requestCode){
-        case GETPIC_TAKEPICTURE:
-        startPhotoZoom(iconUrl);
-        break;
-        case GETPIC_CHOOSEPIC:
+        switch (requestCode) {
+            case GETPIC_TAKEPICTURE:
+                startPhotoZoom(iconUrl);
+                break;
+            case GETPIC_CHOOSEPIC:
 //        String path = UIUtils.getPath(this, data.getData());
-        String path = "";
-        if (null != path){
+                String path = "";
+                if (null != path) {
 //            SxbLog.e(TAG, "startPhotoZoom->path:" + path);
-            File file = new File(path);
-            startPhotoZoom(Uri.fromFile(file));
-        }
-        break;
-        case CROP_CHOOSE:
+                    File file = new File(path);
+                    startPhotoZoom(Uri.fromFile(file));
+                }
+                break;
+            case CROP_CHOOSE:
 //                mUploadHelper.uploadCover(iconCrop.getPath());
 
 //            Bitmap bitmap = BitmapFactory.decodeFile(iconCrop.getPath());
 //            avatar_iv.setImageBitmap(bitmap);
 
-            File file = new File(iconCrop.getPath());
+                File file = new File(iconCrop.getPath());
 
-            avatar_iv.setImageURI(iconCrop);
+                avatar_iv.setImageURI(iconCrop);
 
-        break;
-    }
+                break;
+        }
     }
 
 
